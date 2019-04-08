@@ -10,10 +10,10 @@
 {% endblock%}
 
 {% block content %}
+
 <h2>Este es el portafolio</h2> 
-<ol>
-    <li>Papayas</li>
-    <li>Manzanas</li>
-    <li>Uvas</li>
-</ol>
+{% for project in projects %}
+    <image src="{{project.image.url}}">{{project.title}}
+{% endfor %}
+
 {% endblock %}
