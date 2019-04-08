@@ -9,8 +9,8 @@ class Project(models.Model):
     updated = models.DateTimeField(auto_now=True, verbose_name = "Actualizado")
 
     class Meta:
-        verbose_name_plural = "proyectos"
         verbose_name = "proyecto"
+        verbose_name_plural = "proyectos"
         ordering = ["-created"]
 
     def __str__(self):
